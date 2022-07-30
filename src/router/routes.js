@@ -5,6 +5,28 @@ const routes = [
     children: [{ path: "", component: () => import("pages/Index.vue") }],
   },
 
+  {
+    path: "/account",
+    component: () => import("layouts/AcctLayout.vue"),
+    children: [
+      { path: "", component: () => import("pages/Accounts/AccountsIndex.vue") },
+    ],
+  },
+  {
+    path: "/account/signin",
+    component: () => import("layouts/AcctLayout.vue"),
+    children: [
+      { path: "", component: () => import("pages/Accounts/SignIn.vue") },
+    ],
+  },
+  {
+    path: "/account/signup",
+    component: () => import("layouts/AcctLayout.vue"),
+    children: [
+      { path: "", component: () => import("pages/Accounts/SignUp.vue") },
+    ],
+  },
+
   // Always leave this as last one,
   // but you can also remove it
   {
