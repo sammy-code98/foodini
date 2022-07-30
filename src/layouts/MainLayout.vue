@@ -3,10 +3,10 @@
     <q-footer class="bg-white q-pt-md">
       <q-card class="curved-card">
         <div class="q-mt-md">
-          <div class="q-pt-xl text-h5 text-grey-9 text-center">
+          <div class="q-pt-xl text-h5 text-font text-grey-9 text-center">
             Share your location
           </div>
-          <div class="text-center q-ma-lg text-subtitle1 text-grey-7">
+          <div class="text-center q-ma-lg text-font text-subtitle1 text-grey-7">
             If we have your location,we can do a better job finding what you
             want and deliver it
           </div>
@@ -16,11 +16,13 @@
             dense
             no-caps
             color="positive"
-            class="full-width q-pa-md text-weight-bolder"
+            class="full-width q-pa-md text-font text-weight-bold"
             label="Yes, share my location"
           />
 
-          <div class="text-center text-subtitle1 text-positive q-mt-sm">
+          <div
+            class="text-center text-font text-subtitle1 text-positive q-mt-sm"
+          >
             No, choose location manually
           </div>
         </div>
