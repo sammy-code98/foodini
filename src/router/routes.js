@@ -6,10 +6,17 @@ const routes = [
   },
 
   {
-    path: "/accounts",
+    path: "/account",
     component: () => import("layouts/AcctLayout.vue"),
     children: [
       { path: "", component: () => import("pages/Accounts/AccountsIndex.vue") },
+    ],
+  },
+  {
+    path: "/account/signin",
+    component: () => import("layouts/AcctLayout.vue"),
+    children: [
+      { path: "", component: () => import("pages/Accounts/SignIn.vue") },
     ],
   },
 

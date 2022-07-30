@@ -41,7 +41,7 @@
 <script>
 import { useMeta } from "quasar";
 const metaData = {
-  title: "Medicals ",
+  title: "Foodini || Accounts ",
 };
 export default {
   name: "PageIndex",
