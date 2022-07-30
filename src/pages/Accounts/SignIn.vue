@@ -1,7 +1,7 @@
 <template>
   <div class="row justify-center">
     <div class="col-md-6 col-xs-10 q-mt-xl">
-      <div class="text-center text-h4 text-font q-pb-md text-grey-7">
+      <div class="text-center text-h5 text-font q-pb-md text-grey-7">
         Sign In
       </div>
       <div class="text-center text-font text-grey-7 text-subtitle1">
