@@ -15,10 +15,10 @@
       <img
         alt="Quasar logo"
         src="~assets/quasar-logo-vertical.svg"
-        style="width: 300px; height: 330px"
+        style="width: 300px; height: 300px"
       />
     </div>
-    <div class="row q-ma-md q-pa-sm">
+    <div class="row q-ma-md">
       <q-btn
         class="full-width q-pa-md q-ma-sm text-font text-weight-bold"
         no-caps
