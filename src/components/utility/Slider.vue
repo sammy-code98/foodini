@@ -8,6 +8,7 @@
           :name="food.name"
           :price="food.price"
           :newPrice="food.newPrice"
+          :rating="food.rating"
         />
       </div>
     </div>

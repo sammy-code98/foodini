@@ -19,10 +19,10 @@
         round
         color="positive"
         class="absolute"
-        style="top: 60px; right: 8px; transform: translateY(-100%)"
+        style="top: 60px; right: 4px; transform: translateY(-100%)"
       >
-        <q-icon left name="mdi-shopping-outline" />
-        <div>Label</div></q-btn
+        <q-icon size="15px" left name="mdi-star" />
+        <span>{{ rating }}</span></q-btn
       >
     </q-card-section>
   </q-card>
@@ -35,6 +35,7 @@ export default {
     name: { type: String, required: true },
     price: { type: String, required: true },
     newPrice: { type: String, required: true },
+    rating: { type: String, required: true },
   },
   setup() {
     return {};
