@@ -20,16 +20,39 @@
     <div class="slider-height">
       <slider class="slider-margin-top" />
     </div>
+    <div class="q-pa-md q-mt-md">
+      <div class="text-grey-8 text-h6 text-weight-medium q-mb-md">
+        All Resturants
+      </div>
+      <div v-for="food in foodItem" :key="food.name">
+        <food-card
+          class="text-weight-bolder"
+          :picture="food.src"
+          :name="food.name"
+          :price="food.price"
+          :newPrice="food.newPrice"
+          :rating="food.rating"
+          :caption="food.caption"
+        />
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 import Slider from "../components/utility/Slider.vue";
+import FoodCard from "../components/utility/FoodCard.vue";
+import foodItem from "../data/foodItem";
 export default {
   components: {
     Slider,
+    FoodCard,
   },
-  setup() {},
+  setup() {
+    return {
+      foodItem,
+    };
+  },
 };
 </script>
 
