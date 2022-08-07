@@ -6,6 +6,7 @@ export default foodItem = [
     price: "N30.9",
     newPrice: "N400",
     rating: "4.5",
+    caption: "10-15 min",
   },
   {
     src: "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=388&q=80",
@@ -13,6 +14,7 @@ export default foodItem = [
     price: "N22.22",
     newPrice: "N400",
     rating: "3.5",
+    caption: "10-15 min",
   },
   {
     src: "https://images.unsplash.com/photo-1562157873-818bc0726f68?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=327&q=80",
@@ -20,6 +22,7 @@ export default foodItem = [
     price: "N30.9",
     newPrice: "N400",
     rating: "2.5",
+    caption: "10-15 min",
   },
   {
     src: "https://images.unsplash.com/photo-1562157873-818bc0726f68?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=327&q=80",
@@ -27,6 +30,7 @@ export default foodItem = [
     price: "N30.9",
     newPrice: "N400",
     rating: "4.0",
+    caption: "10-15 min",
   },
   {
     src: "https://images.unsplash.com/photo-1562157873-818bc0726f68?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=327&q=80",
@@ -34,6 +38,7 @@ export default foodItem = [
     price: "N30.9",
     newPrice: "N400",
     rating: "5.0",
+    caption: "10-15 min",
   },
   {
     src: "https://images.unsplash.com/photo-1562157873-818bc0726f68?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=327&q=80",
@@ -41,5 +46,6 @@ export default foodItem = [
     price: "N30.9",
     newPrice: "N400",
     rating: "1.5",
+    caption: "10-15 min",
   },
 ];

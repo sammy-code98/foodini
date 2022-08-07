@@ -9,6 +9,7 @@
           :price="food.price"
           :newPrice="food.newPrice"
           :rating="food.rating"
+          :caption="food.caption"
         />
       </div>
     </div>
@@ -39,12 +40,12 @@ export default {
   scroll-snap-type: x mandatory;
   // this removes slider bar for other browers like firefox
   scrollbar-width: none;
-  .food-card {
-    width: 270px;
-    flex-shrink: 0;
-    height: 100%;
-    margin: 0 2px;
-  }
+}
+.food-card {
+  width: 270px;
+  flex-shrink: 0;
+  height: 100%;
+  margin: 0 2px;
 }
 // this removes slider bar for chrome.
 .my-slide::-webkit-scrollbar {

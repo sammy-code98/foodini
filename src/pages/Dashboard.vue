@@ -17,6 +17,9 @@
       <div class="text-grey-8 text-h6 text-weight-medium">Top rated</div>
       <q-btn flat dense color="black" icon="mdi-arrow-right" />
     </div>
+    <div class="slider-height">
+      <slider class="slider-margin-top" />
+    </div>
   </div>
 </template>
 
@@ -37,5 +40,8 @@ export default {
 
 .slider-margin-top {
   padding-top: 4px;
+}
+.slider-height {
+  height: 300px;
 }
 </style>
