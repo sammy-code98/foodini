@@ -11,6 +11,7 @@
       </div>
       <q-btn flat dense color="black" icon="mdi-arrow-right" />
     </div>
+    <slider />
 
     <div class="row justify-between q-pa-md">
       <div class="text-grey-8 text-h6 text-weight-medium">Top rated</div>
@@ -20,7 +21,11 @@
 </template>
 
 <script>
+import Slider from "../components/utility/Slider.vue";
 export default {
+  components: {
+    Slider,
+  },
   setup() {},
 };
 </script>
