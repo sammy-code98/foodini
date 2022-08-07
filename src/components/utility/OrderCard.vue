@@ -1,6 +1,6 @@
 <template>
   <div>
-    <q-card flat>
+    <q-card flat class="q-px-md">
       <q-list>
         <q-item>
           <q-item-section top avatar>
@@ -20,7 +20,8 @@
 
           <q-item-section side top>
             <q-item-label
-              class="text-subtitle2 text-weight-medium text-positive"
+              class="text-subtitle2 text-weight-medium"
+              :class="status === 'Success' ? 'text-positive' : 'text-negative'"
               >{{ status }}</q-item-label
             >
             <q-item-label
