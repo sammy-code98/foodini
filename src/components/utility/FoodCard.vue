@@ -1,6 +1,12 @@
 <template>
   <q-card flat class="full-width q-pl-sm">
-    <img :src="picture" class="food-img" />
+    <q-img :src="picture" class="food-img">
+      <q-badge
+        class="absolute-bottom-right q-ma-md bg-white text-grey-8 text-subtitle2 time-tag"
+      >
+        {{ caption }}
+      </q-badge>
+    </q-img>
     <q-card-section>
       <div class="text-h6 text-weight-medium text-grey-8">
         {{ name }}
@@ -36,6 +42,7 @@ export default {
     price: { type: String, required: true },
     newPrice: { type: String, required: true },
     rating: { type: String, required: true },
+    caption: { type: String, required: true },
   },
   setup() {
     return {};
@@ -45,9 +52,13 @@ export default {
 <style lang="scss" scoped>
 .food-img {
   height: 200px;
-  border-radius: 30px !important;
+  border-radius: 20px !important;
   margin: 0px;
   padding: 0px;
   position: relative;
+}
+.time-tag {
+  height: 25px;
+  border-radius: 20px !important;
 }
 </style>
