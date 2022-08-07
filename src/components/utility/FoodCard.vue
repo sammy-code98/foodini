@@ -2,7 +2,7 @@
   <q-card flat class="full-width q-pl-sm">
     <q-img :src="picture" class="food-img">
       <q-badge
-        class="absolute-bottom-right q-ma-md bg-white text-grey-8 text-subtitle2 caption-card"
+        class="absolute-bottom-right q-ma-md bg-white text-grey-8 text-subtitle2 time-tag"
       >
         {{ caption }}
       </q-badge>
@@ -57,7 +57,7 @@ export default {
   padding: 0px;
   position: relative;
 }
-.caption-card {
+.time-tag {
   height: 25px;
   border-radius: 20px !important;
 }
