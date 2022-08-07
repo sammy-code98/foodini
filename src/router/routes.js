@@ -41,6 +41,13 @@ const routes = [
     component: () => import("layouts/DashboardLayout.vue"),
     children: [{ path: "", component: () => import("pages/Dashboard.vue") }],
   },
+
+  {
+    path: "/order",
+    component: () => import("layouts/OrderLayout.vue"),
+    children: [{ path: "", component: () => import("pages/Orders.vue") }],
+  },
+
   // Always leave this as last one,
   // but you can also remove it
   {
