@@ -2,19 +2,9 @@
   <q-layout view="lHh Lpr lFf">
     <q-header class="bg-white">
       <q-toolbar>
-        <q-btn
-          flat
-          round
-          dense
-          icon="mdi-google-maps"
-          size="15px"
-          color="grey-7"
-        />
-
         <div class="q-mt-sm">
-          <div class="text-grey-7 text-caption q-mx-sm">Deliver to</div>
-          <div class="text-grey-8 text-subtitle2 q-mx-sm">
-            9,Allen Avenue, Ikeja, Lagos
+          <div class="text-grey-8 text-h5 text-weight-bold q-mx-sm">
+            My Orders
           </div>
         </div>
       </q-toolbar>
