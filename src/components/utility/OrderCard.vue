@@ -5,24 +5,27 @@
         <q-item>
           <q-item-section top avatar>
             <q-avatar rounded>
-              <img src="https://cdn.quasar.dev/img/boy-avatar.png" />
+              <img :src="picture" />
             </q-avatar>
           </q-item-section>
 
           <q-item-section>
-            <q-item-label>Single line item</q-item-label>
-            <q-item-label class="text-grey-8 text-weight-bold text-subtitle1"
-              >Single line item</q-item-label
-            >
+            <q-item-label class="text-grey-7 text-weight-medium">{{
+              orderDate
+            }}</q-item-label>
+            <q-item-label class="text-grey-8 text-weight-bold text-subtitle1">{{
+              name
+            }}</q-item-label>
           </q-item-section>
 
           <q-item-section side top>
             <q-item-label
               class="text-subtitle2 text-weight-medium text-positive"
-              >Success</q-item-label
+              >{{ status }}</q-item-label
             >
-            <q-item-label class="text-subtitle2 text-weight-medium text-grey-8"
-              >Success</q-item-label
+            <q-item-label
+              class="text-subtitle2 text-weight-medium text-grey-8"
+              >{{ price }}</q-item-label
             >
           </q-item-section>
         </q-item>
@@ -30,3 +33,16 @@
     </q-card>
   </div>
 </template>
+
+<script>
+export default {
+  props: {
+    picture: { type: String, required: true },
+    name: { type: String, required: true },
+    orderDate: { type: String, required: true },
+    price: { type: String, required: true },
+    status: { type: String, required: true },
+  },
+  setup() {},
+};
+</script>
