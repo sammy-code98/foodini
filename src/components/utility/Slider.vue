@@ -1,12 +1,13 @@
 <template>
   <div>
     <div class="my-slide">
-      <div class="popular-card" v-for="pop in foodItem" :key="pop.name">
+      <div class="food-card" v-for="food in foodItem" :key="food.name">
         <food-card
-          class="foods-card text-weight-bolder"
-          :picture="pop.src"
-          :name="pop.name"
-          :price="pop.price"
+          class="text-weight-bolder"
+          :picture="food.src"
+          :name="food.name"
+          :price="food.price"
+          :newPrice="food.newPrice"
         />
       </div>
     </div>
@@ -37,8 +38,8 @@ export default {
   scroll-snap-type: x mandatory;
   // this removes slider bar for other browers like firefox
   scrollbar-width: none;
-  .popular-card {
-    width: 150px;
+  .food-card {
+    width: 270px;
     flex-shrink: 0;
     height: 100%;
     margin: 0 2px;
@@ -47,8 +48,5 @@ export default {
 // this removes slider bar for chrome.
 .my-slide::-webkit-scrollbar {
   display: none;
-}
-.goods-card {
-  font-family: "Sniglet", cursive;
 }
 </style>

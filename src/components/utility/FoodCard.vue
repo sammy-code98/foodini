@@ -1,21 +1,29 @@
 <template>
-  <q-card flat class="full-width">
-    <img :src="picture" class="product-img" />
+  <q-card flat class="full-width q-pl-sm">
+    <img :src="picture" class="food-img" />
     <q-card-section>
-      <div class="text-body1">
+      <div class="text-h6 text-weight-medium text-grey-8">
         {{ name }}
       </div>
-      <div class="text-h5 text-weight-bold">
-        {{ price }}
+      <div>
+        <span
+          class="text-subtitle1 text-strike text-weight-medium text-grey-8 q-mr-sm"
+          >{{ price }}</span
+        >
+
+        <q-badge color="red"> {{ newPrice }} </q-badge>
       </div>
+
       <q-btn
         flat
         round
-        color="text-black"
-        icon="mdi-shopping-outline"
+        color="positive"
         class="absolute"
-        style="top: 60px; right: 8px; transform: translateY(-50%)"
-      />
+        style="top: 60px; right: 8px; transform: translateY(-100%)"
+      >
+        <q-icon left name="mdi-shopping-outline" />
+        <div>Label</div></q-btn
+      >
     </q-card-section>
   </q-card>
 </template>
@@ -26,6 +34,7 @@ export default {
     picture: { type: String, required: true },
     name: { type: String, required: true },
     price: { type: String, required: true },
+    newPrice: { type: String, required: true },
   },
   setup() {
     return {};
@@ -33,7 +42,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.product-img {
+.food-img {
   height: 200px;
   border-radius: 30px !important;
   margin: 0px;
