@@ -22,6 +22,22 @@
         <search-slider class="slider-margin-top" />
       </div>
     </div>
+
+    <div class="q-px-md q-mt-md">
+      <div class="text-grey-8 text-h6 text-weight-medium">
+        Popular Categories
+      </div>
+
+      <q-list
+        class="q-mt-sm"
+        v-for="popCat in popularCategory"
+        :key="popCat.title"
+      >
+        <q-item clickable v-ripple>
+          <q-item-section>{{ popCat.title }}</q-item-section>
+        </q-item>
+      </q-list>
+    </div>
   </div>
 </template>
 
@@ -29,6 +45,7 @@
 import { ref } from "vue";
 import SearchSlider from "../components/utility/SearchSlider.vue";
 import foodItem from "../data/foodItem";
+import popularCategory from "../data/popularCategory";
 export default {
   components: {
     SearchSlider,
@@ -37,6 +54,7 @@ export default {
     return {
       text: ref(""),
       foodItem,
+      popularCategory,
     };
   },
 };
