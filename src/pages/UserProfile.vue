@@ -14,6 +14,52 @@
       <toggle-btn />
     </div>
   </div>
+  <div class="q-mt-md q-pa-md">
+    <q-list>
+      <q-item clickable v-ripple>
+        <q-item-section avatar>
+          <q-icon color="grey-8" name="mdi-credit-card-settings-outline" />
+        </q-item-section>
+        <q-item-section class="text-grey-8 text-weight-bold"
+          >Payment</q-item-section
+        >
+      </q-item>
+      <q-item clickable v-ripple>
+        <q-item-section avatar>
+          <q-icon color="grey-8" name="mdi-alert-decagram-outline" />
+        </q-item-section>
+        <q-item-section class="text-grey-8 text-weight-bold"
+          >Discounts and promotions</q-item-section
+        >
+      </q-item>
+
+      <q-item clickable v-ripple>
+        <q-item-section avatar>
+          <q-icon color="grey-8" name="mdi-cog-outline" />
+        </q-item-section>
+        <q-item-section class="text-grey-8 text-weight-bold"
+          >Settings</q-item-section
+        >
+      </q-item>
+      <q-item clickable v-ripple>
+        <q-item-section avatar>
+          <q-icon color="grey-8" name="mdi-wechat" />
+        </q-item-section>
+        <q-item-section class="text-grey-8 text-weight-bold"
+          >Contact Support</q-item-section
+        >
+      </q-item>
+    </q-list>
+  </div>
+  <div class="q-pa-md">
+    <q-btn
+      outline
+      color="grey-8"
+      no-caps
+      class="full-width q-pa-md rounded"
+      label="Sign out"
+    />
+  </div>
 </template>
 
 <script>

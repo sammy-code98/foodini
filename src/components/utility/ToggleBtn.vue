@@ -31,7 +31,6 @@ export default {
     const toggleMode = ref(true);
     const toggle = () => {
       toggleMode.value = !toggleMode.value;
-      console.log("keke");
     };
     return {
       toggleMode,
