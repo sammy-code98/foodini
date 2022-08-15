@@ -7,7 +7,7 @@
     </div>
     <div class="row justify-between q-pa-md">
       <div class="text-grey-8 text-h6 text-weight-medium">
-        Resturants nearby
+        Restaurants nearby
       </div>
       <q-btn flat dense color="black" icon="mdi-arrow-right" />
     </div>
@@ -22,7 +22,7 @@
     </div>
     <div class="q-pa-md q-mt-md">
       <div class="text-grey-8 text-h6 text-weight-medium q-mb-md">
-        All Resturants
+        All Restaurants
       </div>
       <div v-for="food in foodItem" :key="food.name">
         <food-card
@@ -57,10 +57,6 @@ export default {
 </script>
 
 <style scoped>
-.rounded {
-  border-radius: 8px;
-}
-
 .slider-margin-top {
   padding-top: 4px;
 }
